@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../img/wave.jpg");
+  background-image: url("../img/back.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -25,10 +25,11 @@ section {
 
 .post {
   margin-top: 1em;
-  background-color: rgbA(103, 109, 109, 0.2);
+  background-color: rgbA(51, 204, 255, 0.2);
   text-align: center;
   color: white;
   width: 70%;
+  border-radius: 60px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,7 @@ section {
 
 .postTitle {
   color: aliceblue;
-  background-color: rgba(147, 157, 163, 0.3);
+  background-color: rgba(102, 153, 255, 0.3);
   border-radius: 12px;
   padding: 5px;
   text-decoration: none;
@@ -54,24 +55,29 @@ a, p, h1 {
 }
 
 .postTitle:hover {
-  background-color: rgba(147, 157, 163, 0.7);
+  background-color: rgba(102, 153, 255, 0.7);
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
   transition-property: background-color;
   transition: 500ms;
 }
 
 .title {
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: aliceblue;
-  font-size: 50px;
+  background-color: rgba(102, 153, 255, 0.3);
+  border-radius: 12px;
+  padding: 5px;
+  text-decoration: none;
+  transition: 700ms;
   width: 80%;
+  margin: auto;
 }
 
 /* TODO:btns #newstories, #topstories, #jobs,#polls*/
 .comment {
   margin: 30px;
   text-align: start;
-  background-color: rgbA(103, 109, 109, 0.4);
+  border-radius: 60px;
+  background-color: rgbA(51, 204, 255, 0.4);
   padding: 30px;
   color: white;
 }

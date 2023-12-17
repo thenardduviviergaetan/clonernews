@@ -38,7 +38,7 @@ let pageStoryIds = [];
 */
 const fetchData = async () => {
     document.getElementById('showMore').style.display = ''
-        document.getElementById('getLastUpdates').style.display = ''
+    document.getElementById('getLastUpdates').style.display = ''
     let flag = 0;
     if (currentSection == "polls"){
         flag=1; 
@@ -54,9 +54,9 @@ const fetchData = async () => {
             const startIndex = (currentPage - 1) * 10;
             const endIndex = currentPage * 10;
             if (flag == 0){
-            pageStoryIds = storyIds.slice(startIndex, endIndex);
+                pageStoryIds = storyIds.slice(startIndex, endIndex);
             } else {
-            pageStoryIds = [160704, 126809]
+                pageStoryIds = [160704, 126809]
             }
             // Fetch details of each story, job, and poll
             const itemPromises = pageStoryIds.map(itemId =>
@@ -150,10 +150,10 @@ function originUpdatesTracker() {
 
     btn.addEventListener('click', () => {
         refreshData()
-
     })
     
-    setInterval(() => {fetch(`${baseUrl}${currentSection}.json`)
+    setInterval(() => {
+    if (currentSection != 'polls') fetch(`${baseUrl}${currentSection}.json`)
     .then(resp => resp.json())
     .then(v => {
         let inbetween = v.indexOf(maxItem)

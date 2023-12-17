@@ -124,9 +124,10 @@
 
 
 body{
-        background-image: url('../img/wave.jpg');
-            background-size: cover;
-            background-attachment: fixed;
+    background-image: url('../img/back.jpg');
+    // background-image: url("https://img.freepik.com/vecteurs-libre/contexte-realiste-particule-technologie-abstraite_23-2148431735.jpg?t=st=1702829903~exp=1702830503~hmac=b4ee6c2b6db03ef4a4d666c93cb19c4945e76cbb251d653cbdb54ac80974cf84");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -144,10 +145,12 @@ section{
 
 .post {
     margin-top: 1em;
-    background-color: rgbA(103, 109, 109, .2);
+    // background-color: rgbA(103, 109, 109, .2);
+    background-color: rgbA(51, 204, 255, .2);
     text-align: center;
     color: white;
     width: 70%;
+    border-radius: 60px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -158,7 +161,7 @@ section{
 
 .postTitle {
     color: aliceblue;
-    background-color: rgb(147, 157, 163, .3);
+    background-color: rgb(102, 153, 255, .3);
     border-radius: 12px;
     padding: 5px;
     text-decoration: none;
@@ -172,18 +175,25 @@ a, p, h1 {
 }
 
 .postTitle:hover {
-    background-color: rgb(147, 157, 163, .7);
+    background-color: rgb(102, 153, 255, .7);
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     transition-property: background-color;
     transition: 500ms;
 }
 
 .title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    // color: aliceblue;
+    // font-size: 50px;
+    // width: 80%;
     color: aliceblue;
-    font-size: 50px;
+    background-color: rgb(102, 153, 255, .3);
+    border-radius: 12px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 700ms;
     width: 80%;
-
+    margin: auto;
 }
 
 /* TODO:btns #newstories, #topstories, #jobs,#polls*/
@@ -191,7 +201,9 @@ a, p, h1 {
  .comment {
     margin: 30px;
     text-align: start;
-    background-color: rgbA(103, 109, 109, .4);
+    border-radius: 60px;
+    // background-color: rgbA(103, 109, 109, .4);
+    background-color: rgbA(51, 204, 255, .4);
     padding: 30px;
     color: white;
 }
