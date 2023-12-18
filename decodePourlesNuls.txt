@@ -1,0 +1,23 @@
+-Les chose que j'ai apprise dans ce code :
+
+- Le "@param" : 
+
+    Celui ci permet de mettre des commentaires quand on met la souris sur les fonctions. Je me disais bien que c'était
+    bizarre de ne pas avoir cette fonctionalité dans js, alors que c'était ultra utile en golang.
+
+    "Exemples d'usages" :
+
+        * @param {number} delay - The delay in milliseconds between function calls.
+        * @param {Object} options - The options for throttling.
+        * @param {boolean} options.leading - Whether to allow the leading function call.
+
+        "Il suffira de mettre la souris dessus pour obtenir les infos de la variable ou de la func"
+
+- Le throttling :
+
+    En résumé, cette fonction de throttling("throttle" dans clonersnews.js) permet de contrôler la fréquence d'appel d'une fonction en autorisant ou en 
+    bloquant certains appels en fonction des options spécifiées (leading et trailing) et du délai (delay). 
+    Elle garantit qu'au moins un appel est autorisé si leading est activé, et qu'un dernier appel peut être autorisé après le délai si 
+    trailing est activé.
+
+-
